@@ -1,6 +1,6 @@
 ---
 name: tax-loss-harvesting-tracker
-description: Identify and execute tax loss harvesting opportunities across your portfolio. Use this skill when someone asks about tax loss harvesting, wants to find losses to offset gains, asks "how can I reduce my capital gains tax", "which positions should I sell for losses", "wash sale rules", "tax-efficient selling", or mentions wanting to offset gains with losses. Also trigger when users share portfolio positions with unrealized losses, ask about year-end tax planning for investments, or want to understand how harvesting losses works. This skill handles wash sale compliance, replacement security suggestions, and cross-account tracking.
+description: Identifies and plans tax loss harvesting opportunities across a portfolio. Use when the user asks about tax loss harvesting, wants to find losses to offset gains, asks "how can I reduce my capital gains tax", "which positions should I sell for losses", "wash sale rules", "tax-efficient selling", or mentions offsetting gains with losses. Also triggers when users share portfolio positions with unrealized losses, ask about year-end tax planning for investments, or want to understand how harvesting losses works. Handles wash-sale compliance, replacement security suggestions, and cross-account tracking.
 ---
 
 # Tax Loss Harvesting Tracker
@@ -33,6 +33,18 @@ If the user doesn't have positions to share, explain the concept with examples a
 ---
 
 ## Analysis Workflow
+
+Copy this checklist into your working response and tick items off as you go:
+
+```
+TLH Analysis Progress:
+- [ ] Step 1: Identify harvesting candidates (positions at a loss)
+- [ ] Step 2: Match losses to gains (apply ordering rules)
+- [ ] Step 3: Wash-sale compliance check across ALL accounts (incl. spouse, IRA, DRIP)
+- [ ] Step 4: Suggest replacement securities
+- [ ] Step 5: Generate action plan with calendar reminders
+- [ ] Disclaimers included
+```
 
 ### Step 1: Identify Harvesting Candidates
 

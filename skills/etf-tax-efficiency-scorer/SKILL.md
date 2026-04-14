@@ -1,6 +1,6 @@
 ---
 name: etf-tax-efficiency-scorer
-description: Compare and score ETFs by tax efficiency to help investors choose the most tax-friendly funds for taxable accounts. Use this skill when someone asks "which ETF is more tax efficient", "best ETFs for taxable account", "tax-efficient investing", "compare ETFs for taxes", "which fund distributes less in capital gains", "tax-friendly index funds", or any question about choosing investments based on tax impact. Also trigger when users ask about asset location (which funds go in which account type), dividend tax treatment, or want to understand why some funds generate more taxable events than others. Covers ETFs, mutual funds, and index funds.
+description: Compares and scores ETFs by tax efficiency to help investors choose the most tax-friendly funds for taxable accounts. Use when the user asks "which ETF is more tax efficient", "best ETFs for taxable account", "tax-efficient investing", "compare ETFs for taxes", "which fund distributes less in capital gains", "tax-friendly index funds", or any question about choosing investments based on tax impact. Also triggers on asset-location questions (which funds belong in which account type), dividend tax treatment, or why some funds generate more taxable events than others. Covers ETFs, mutual funds, and index funds.
 ---
 
 # ETF Tax Efficiency Scorer

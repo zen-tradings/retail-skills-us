@@ -1,6 +1,6 @@
 ---
 name: portfolio-rebalance-tax-calc
-description: Calculate the tax cost of rebalancing your portfolio and find the most tax-efficient way to get to your target allocation. Use this skill when someone asks about rebalancing their portfolio, adjusting asset allocation, "how to rebalance without paying too much tax", "tax-efficient rebalancing", "I want to change my allocation from X to Y", "reduce my stock exposure", "move money from stocks to bonds", or any question about changing portfolio weights while minimizing taxes. Also trigger when users mention their portfolio is overweight/underweight in something, they want to de-risk, or they're considering a major portfolio restructuring. Covers multi-account rebalancing, tax-lot optimization, and phased transition plans.
+description: Calculates the tax cost of rebalancing a portfolio and finds the most tax-efficient path from the current allocation to a target allocation. Use when the user asks about rebalancing, adjusting asset allocation, "how to rebalance without paying too much tax", "tax-efficient rebalancing", "change my allocation from X to Y", "reduce my stock exposure", "move money from stocks to bonds", or any question about changing portfolio weights while minimizing taxes. Also triggers when users mention being overweight or underweight in something, want to de-risk, or are considering a major portfolio restructuring. Covers multi-account rebalancing, tax-lot optimization, and phased transition plans.
 ---
 
 # Portfolio Rebalance Tax Calculator
@@ -107,6 +107,18 @@ Timeline: 1-3 years
 ---
 
 ## Calculation Workflow
+
+Copy this checklist into your working response and tick items off as you go:
+
+```
+Rebalance Tax Plan Progress:
+- [ ] Step 1: Map current vs target allocation
+- [ ] Step 2: Identify zero-tax rebalancing moves (IRA / 401k / contributions / DRIP)
+- [ ] Step 3: Optimize taxable-account sales (lot selection)
+- [ ] Step 4: Calculate total rebalancing tax cost (compare options A / B / C)
+- [ ] Step 5: Generate phased action plan
+- [ ] Disclaimers included
+```
 
 ### Step 1: Map Current vs. Target
 

@@ -1,5 +1,15 @@
 # US Federal & State Tax Rate Reference (2025 Tax Year)
 
+> Tax-year-locked reference. Numbers below are the **2025** brackets. If the user is planning for a different tax year, treat these as approximate and ask the user to confirm against current IRS / state publications before acting on dollar thresholds.
+
+## Contents
+- Federal Long-Term Capital Gains & Qualified Dividends
+- Net Investment Income Tax (NIIT)
+- Federal Ordinary Income Brackets (Single, MFJ, MFS, HoH)
+- State Income Tax Rates (top marginal)
+- California Tax Brackets (Single)
+- Key Tax Rules (wash sale, capital loss limits, holding period, qualified dividends, standard deduction)
+
 ## Federal Long-Term Capital Gains & Qualified Dividends
 
 | Filing Status | 0% Rate | 15% Rate | 20% Rate |

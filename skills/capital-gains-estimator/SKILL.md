@@ -1,6 +1,6 @@
 ---
 name: capital-gains-estimator
-description: Estimate the tax impact of selling investments BEFORE you sell. Use this skill whenever someone asks about selling stocks, ETFs, or other investments and wants to know the tax consequences, or asks "how much tax will I owe", "should I sell now or wait", "what's the tax on my gains", "short-term vs long-term tax difference", "tax impact of selling", or any question about capital gains taxes on a potential or completed sale. Also trigger when users mention holding periods, tax brackets for investments, or comparing after-tax returns. This skill covers federal + state taxes, NIIT, and provides actionable sell/hold recommendations.
+description: Estimates the tax impact of selling investments before the trade is executed. Use when the user asks about selling stocks, ETFs, or other investments and wants to know the tax consequences, asks "how much tax will I owe", "should I sell now or wait", "what's the tax on my gains", "short-term vs long-term tax difference", "tax impact of selling", or any question about capital gains taxes on a potential or completed sale. Also triggers when users mention holding periods, tax brackets for investments, or comparing after-tax returns. Covers federal and state taxes, NIIT, and produces actionable sell/hold recommendations.
 ---
 
 # Capital Gains Tax Estimator
@@ -42,6 +42,20 @@ If the user doesn't know their taxable income, help them estimate:
 ---
 
 ## Calculation Workflow
+
+Copy this checklist into your working response and tick items off as you go:
+
+```
+Capital Gains Estimate Progress:
+- [ ] Step 1: Determine gain/loss
+- [ ] Step 2: Classify holding period (short-term vs long-term)
+- [ ] Step 3: Calculate federal tax
+- [ ] Step 4: Calculate NIIT (if MAGI over threshold)
+- [ ] Step 5: Calculate state tax
+- [ ] Step 6: Total tax + effective rate
+- [ ] Hold-vs-sell comparison if near 1-year mark
+- [ ] Actionable insight included
+```
 
 ### Step 1: Determine Gain/Loss
 ```
@@ -163,7 +177,7 @@ Recommendation: Sell Lot 3 first to harvest the loss, then Lot 1 for the lower L
 - **Gifted assets**: Donor's basis carries over (for gains); FMV at gift date (for losses)
 - **Stock splits**: Adjust cost basis proportionally
 - **Reinvested dividends**: Each reinvestment is a separate lot with its own basis and date
-- **Cryptocurrency**: Taxed as property; same rules apply but no wash sale rule (as of 2024, changes in 2025)
+- **Cryptocurrency**: Taxed as property. The wash-sale rule has historically not applied to crypto under current IRS guidance, but legislative changes have been proposed — verify the current treatment before relying on this for tax planning.
 - **Collectibles**: 28% max rate for long-term gains
 - **Section 1202 QSBS**: Potential 50-100% exclusion — flag if user mentions startup stock held 5+ years
 
