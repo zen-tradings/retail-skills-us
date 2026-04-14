@@ -1,0 +1,24 @@
+{
+  "skill_name": "strategy-building",
+  "notes": "Start with these 3 cases. Run each WITH and WITHOUT the skill loaded; the delta is the only proof the skill earns its tokens. Add 'assertions' arrays AFTER reading the first round of outputs — see README.md.",
+  "evals": [
+    {
+      "id": "fuzzy-roth-growth",
+      "branch": "A",
+      "prompt": "I'm 32, just opened a Roth IRA, want it to grow for retirement. I have about $7k to put in. What should I do?",
+      "expected_output": "A Branch A spec with a long-term growth archetype, an aggressive allocation justified by the ~30yr horizon, broad-market low-cost ETF universe, explicit Entry / Sizing / Rebalance / Contributions / Exit rules, guardrails, and an 'Open Questions' section listing whatever the user was vague about (risk tolerance, recurring contributions, existing holdings, etc.). The skill should ask clarifying questions before committing to an allocation, OR explicitly flag which Required interview items it is assuming."
+    },
+    {
+      "id": "thesis-basket-photonics",
+      "branch": "B",
+      "prompt": "I think AXTI, COHR, and LITE are all going to benefit from the AI optical buildout. How should I play them?",
+      "expected_output": "A Branch B spec where the skill: (1) asks about the surrounding portfolio before sizing, (2) forces a one-sentence thesis AND an invalidation trigger per ticker, (3) names the sector / shared-demand-driver overlap explicitly (all three are optical components plays — that is concentration, not diversification), (4) assigns a portfolio role (core / satellite / lottery) with an explicit % cap, (5) sets a max single-name cap inside the basket, (6) does not endorse the picks as 'good trades'."
+    },
+    {
+      "id": "hybrid-existing-nvda",
+      "branch": "hybrid",
+      "prompt": "I want growth and I already own a chunk of NVDA from my RSUs. Help me build a portfolio.",
+      "expected_output": "Branch A core allocation built first (long-term growth archetype with a sensible aggressive split), with the existing NVDA position treated as a Branch B satellite — sized and capped separately, with a thesis and an invalidation trigger, and NOT silently folded into the core. The spec should call out RSU concentration risk and employer-stock considerations as Open Questions."
+    }
+  ]
+}
